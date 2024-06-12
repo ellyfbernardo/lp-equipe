@@ -31,7 +31,6 @@
    .menu.open {
      display: flex;
      z-index: 1;
-
    }
    
    .menu ul {
