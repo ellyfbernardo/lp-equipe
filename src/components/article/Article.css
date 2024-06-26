@@ -1,0 +1,58 @@
+.article-container{
+     /* height: 1000px; */
+     background-color: #494848;
+     color: #fff;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     width: 100%;
+}
+.tenda-svg{
+     width: 100%;
+     margin-top: 8%;
+
+}
+.title-porque{
+     text-align: center;
+     font-family: Poppins;
+     font-size: 32px;
+}
+
+/* .text-article{
+
+} */
+
+.text-container{
+     display: flex;
+     margin-top: 10%;
+}
+.text-container h1{
+     font-family: Poppins;
+     font-size: 90px;
+     line-height: 32px;
+     margin-left: 2%;
+
+}
+.text-container h3{
+     font-family: Poppins;
+     font-size: 12px;
+     line-height: 24px;
+     margin-left: 2%;
+
+}
+.p-text{
+     font-family: Poppins;
+     text-align: start;
+     font-size: 12px;
+     width: 90%;
+     margin-left: 2%;
+
+}
+.p-footer-article{
+     font-family: Poppins;
+     text-align: center;
+     font-size: 12px;
+     width: 90%;
+     margin-top: 10%;
+     margin-left: 2%;
+}

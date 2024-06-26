@@ -1,9 +1,11 @@
+.container{
+  background-color: #E8E8E8;
+}
 .slider-container {
   width: 80%;
   margin: auto;
   text-align: center;
 }
-
 .slide-item {
   padding: 10px;
 }

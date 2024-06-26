@@ -54,6 +54,7 @@ const SliderComponent = () => {
   };
 
   return (
+     <div className='container'>
     <div className="slider-container">
       <p>Quer Saber Mais? Clique Para Mais Informações.</p>
       <Slider {...settings}>
@@ -64,6 +65,7 @@ const SliderComponent = () => {
         ))}
       </Slider>
       <ModalComponent show={showModal} onClose={handleCloseModal} content={modalContent} />
+    </div>
     </div>
   );
 };
