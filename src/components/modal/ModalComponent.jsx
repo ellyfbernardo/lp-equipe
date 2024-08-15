@@ -15,7 +15,7 @@ const ModalComponent = ({ show, onClose, content }) => {
   return (
     <div className="modal-overlay" onClick={handleOverlayClick}>
       <div className="modal">
-        <h2>Detalhes da Opção</h2>
+        <h2>Detalhes</h2>
         <p>{content}</p>
         <button onClick={onClose}>Fechar</button>
       </div>

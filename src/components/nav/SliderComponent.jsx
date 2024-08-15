@@ -10,21 +10,21 @@ const SliderComponent = () => {
   const [modalContent, setModalContent] = useState('');
 
   const items = [
-    { id: 1, text: 'Otimização SEO' },
-    { id: 2, text: 'Design Personalizado' },
-    { id: 3, text: 'Captação de Leads' },
-    { id: 4, text: 'Marketing de Conteúdo' },
-    { id: 6, text: 'Desenvolvimento Web' },
-    { id: 7, text: 'Publicidade Online' },
-    { id: 8, text: 'Email Marketing' },
-    { id: 9, text: 'Análise de Dados' },
-    { id: 10, text: 'Consultoria Digital' },
+    { id: 1, text: 'Otimização SEO', description: 'A Otimização SEO ajuda a melhorar o ranking do seu site nos motores de busca, atraindo mais visitantes.' },
+    { id: 2, text: 'Design Personalizado', description: 'Design exclusivo criado sob medida, refletindo a identidade única e as necessidades do cliente.'},
+    { id: 3, text: 'Captação de Leads', description:'Atraia e conquiste clientes potenciais com estratégias eficazes de captação de leads!' },
+    { id: 4, text: 'Marketing de Conteúdo', description:'Conquiste seu público com conteúdo relevante e envolvente que impulsiona sua marca!' },
+    { id: 6, text: 'Desenvolvimento Web', description:'Tenha um site incrível e funcional que se destaca online com nosso desenvolvimento web especializado!' },
+    { id: 7, text: 'Publicidade Online', description:'Amplie seu alcance e gere resultados com campanhas de publicidade online impactantes e direcionadas!' },
+    { id: 8, text: 'Email Marketing', description:'Conquiste clientes com campanhas de email marketing personalizadas e envolventes!' },
+    { id: 9, text: 'Análise de Dados', description:'Transforme dados em insights poderosos para decisões estratégicas com nossa análise de dados avançada!' },
+    { id: 10, text: 'Consultoria Digital', description:'Maximize seu potencial online com nossa consultoria digital especializada e estratégica!' },
   ];
 
   const settings = {
   dots: false,
   infinite: true,
-  speed: 500,
+  speed: 400,
   slidesToShow: 3,
   slidesToScroll: 1,
   nextArrow: <div className="arrow next"></div>,
@@ -44,8 +44,8 @@ const SliderComponent = () => {
     }
   ]
 };
-  const handleButtonClick = (content) => {
-    setModalContent(content);
+  const handleButtonClick = (description) => {
+    setModalContent(description);
     setShowModal(true);
   };
 
@@ -60,7 +60,7 @@ const SliderComponent = () => {
       <Slider {...settings}>
         {items.map((item) => (
           <div key={item.id} className="slide-item">
-            <button onClick={() => handleButtonClick(item.text)}>{item.text}</button>
+            <button onClick={() => handleButtonClick(item.description)}>{item.text}</button>
           </div>
         ))}
       </Slider>

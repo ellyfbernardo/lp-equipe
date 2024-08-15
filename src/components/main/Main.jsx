@@ -13,7 +13,7 @@ function Main(){
                     ajudando você a <br/> alcançar um público maior."</p>
 
 
-                    <button className='button-zap'>WHATSAPP</button>
+                    <a href="https://api.whatsapp.com/send/?phone=5584991370383&text&type=phone_number&app_absent=0"><button className='button-zap'>WHATSAPP</button></a>
                </main>
           </>
      )
